@@ -25,7 +25,7 @@ export class StudentALX {
   }
 
   get alxClass() {
-    return this.alxClass;
+    return this._alxClass;
   }
 
   get fullStudentDescription() {
