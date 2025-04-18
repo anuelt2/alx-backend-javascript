@@ -29,7 +29,7 @@ export class StudentALX {
   }
 
   get fullStudentDescription() {
-    return `${this._fullName} - ${this._alxClass.year} - ${this._alxClass.location}`;
+    return `${this.fullName} - ${this._alxClass.year} - ${this._alxClass.location}`;
   }
 }
 
