@@ -1,5 +1,3 @@
-console.log('Loaded main.ts')
-
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -9,12 +7,6 @@ interface Teacher {
   [key: string]: any;
 }
 
-const teacher3: Teacher = {
-  firstName: 'John',
-  lastName: 'Doe',
-  fullTimeEmployee: false,
-  location: 'London',
-  contract: false,
-};
-
-console.log(teacher3);
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
