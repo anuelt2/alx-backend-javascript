@@ -1,12 +1,16 @@
 process.stdout.write('Welcome to ALX, what is your name?\n');
 
-process.stdin.setEncoding('utf8');
-
-process.stdin.on('data', (data) => {
-  const name = data.trim();
-  console.log(`Your name is: ${name}`);
-});
-
-process.stdin.on('end', () => {
-  process.stdout.write('This important software is now closing\n');
-});
+if (process.stdin.isTTY) {
+  process.stdin.on('data', (data) => {
+    process.stdout.write(`Your name is: ${data.toString()}`);
+    process.exit();
+  });
+} else {
+  process.stdin.on('data', (data) => {
+    process.stdout.write(`Your name is: ${data.toString()}`);
+    process.exit();
+  });
+  process.on('exit', () => {
+    process.stdout.write('This important software is now closing\n');
+  });
+}
