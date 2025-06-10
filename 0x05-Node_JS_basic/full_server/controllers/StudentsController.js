@@ -26,7 +26,7 @@ export default class StudentsController {
     const { major } = request.params;
 
     if ((major === undefined) || ((major !== 'CS') && (major !== 'SWE'))) {
-      response.status(500).send('Major parameter must be CS or SWE');
+      return response.status(500).send('Major parameter must be CS or SWE');
     }
 
     return readDatabase(DB)
