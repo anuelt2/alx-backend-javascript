@@ -47,7 +47,7 @@ const app = createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
   if (req.url === '/') {
-    res.end('Hello ALX!');
+    res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
     countStudents(DB)
       .then((output) => {
