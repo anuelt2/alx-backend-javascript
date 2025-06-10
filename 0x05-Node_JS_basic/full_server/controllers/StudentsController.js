@@ -1,6 +1,6 @@
 import readDatabase from '../utils';
 
-export default class StudentsController {
+class StudentsController {
   static getAllStudents(request, response) {
     const DB = process.argv[2];
 
@@ -43,3 +43,5 @@ export default class StudentsController {
       });
   }
 }
+
+export default StudentsController;
