@@ -1,7 +1,7 @@
 import readDatabase from '../utils';
 
 export default class StudentsController {
-  static async getAllStudents(request, response) {
+  static getAllStudents(request, response) {
     const DB = process.argv[2];
 
     return readDatabase(DB)
@@ -21,7 +21,7 @@ export default class StudentsController {
       });
   }
 
-  static async getAllStudentsByMajor(request, response) {
+  static getAllStudentsByMajor(request, response) {
     const DB = process.argv[2];
     const { major } = request.params;
 
