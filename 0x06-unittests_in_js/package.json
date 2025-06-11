@@ -1,0 +1,15 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Welcome to Unittests in JS project. This project focuses on how to use Mocha to write a test suite in JS, use of Node and Chai assertion libraries, how to present long test suites, when and how to use spies, stubs, how to use hooks, unit testing with Async functions, and how to write integration tests with a small node server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.6.0"
+  }
+}
