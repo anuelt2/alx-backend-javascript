@@ -1,7 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
 const request = require('request');
-const app = require('./api');
 
 describe('Payment API integration', function() {
   describe('index page', function() {
